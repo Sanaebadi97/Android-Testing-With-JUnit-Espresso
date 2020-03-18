@@ -16,7 +16,6 @@ class MyUtilsTest {
          */
         var actualNumber: Int = MyUtils.sum(nums)
         var expected: Int = 7
-
         assertEquals(expected, actualNumber)
 
         println("SUM IS $actualNumber")
@@ -31,14 +30,10 @@ class MyUtilsTest {
 
         println("SUM2 IS $actualNumber")
 
-
-        /*
-
-        average method test
-         */
-
-
     }
+
+
+    // average method test
 
     @Test
     internal fun averageTest() {
@@ -50,5 +45,17 @@ class MyUtilsTest {
 
         println("AVERAGE IS $actualNumber")
 
+    }
+
+
+    // numExist method test
+    @Test
+    internal fun numberExistTest() {
+        var numbers = listOf<Int>(1, 2, 3)
+        var actualNumber: Boolean = MyUtils.numberExist(numbers, 1)
+        var expected: Boolean = true
+        assertEquals(expected, actualNumber)
+
+        println("numberExistTest IS $actualNumber")
     }
 }
