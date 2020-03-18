@@ -24,5 +24,17 @@ class MyUtils {
 
             return average / numbers.size
         }
+
+
+        fun numberExist(numbers: List<Int>, numToSearch: Int): Boolean {
+            for (num: Int in numbers) {
+
+                if (num == numToSearch) {
+                    return true
+                }
+            }
+
+            return false
+        }
     }
 }
