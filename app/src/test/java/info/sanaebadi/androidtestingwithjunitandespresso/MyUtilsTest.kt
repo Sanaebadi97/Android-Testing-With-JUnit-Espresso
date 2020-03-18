@@ -32,5 +32,23 @@ class MyUtilsTest {
         println("SUM2 IS $actualNumber")
 
 
+        /*
+
+        average method test
+         */
+
+
+    }
+
+    @Test
+    internal fun averageTest() {
+        var nums = listOf<Int>(3, 4, 5)
+        var expected: Float = 4.0f
+        var actualNumber: Float = MyUtils.average(nums)
+
+        assertEquals(expected, actualNumber)
+
+        println("AVERAGE IS $actualNumber")
+
     }
 }
