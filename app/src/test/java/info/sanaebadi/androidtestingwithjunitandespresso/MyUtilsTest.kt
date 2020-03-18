@@ -58,4 +58,18 @@ class MyUtilsTest {
 
         println("numberExistTest IS $actualNumber")
     }
+
+
+    //search number
+    @Test
+    internal fun searchTest() {
+        var numbers = listOf<Int>(1, 2, 3,4)
+        var actualNumber = MyUtils.search(numbers, 2)
+        var expected = 1
+
+        assertEquals(expected, actualNumber)
+
+        println("searchTest IS $actualNumber")
+
+    }
 }
