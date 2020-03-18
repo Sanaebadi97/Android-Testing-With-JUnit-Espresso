@@ -11,7 +11,18 @@ class MyUtils {
                 summation += sum
             }
 
-            return (summation +1)
+            return (summation + 1)
+        }
+
+
+        fun average(numbers: List<Int>): Float {
+            var average: Float = 0.0f
+            for (num: Int in numbers) {
+                average += num.toFloat()
+
+            }
+
+            return average / numbers.size
         }
     }
 }
