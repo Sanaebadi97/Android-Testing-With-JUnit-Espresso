@@ -72,8 +72,10 @@
         android:text="@string/register"
         android:textColor="@android:color/holo_red_dark"
         android:textSize="22sp"
+        android:onClick="handelRegister"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txt_error" />
+        app:layout_constraintTop_toBottomOf="@id/txt_error"
+        tools:ignore="OnClick" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

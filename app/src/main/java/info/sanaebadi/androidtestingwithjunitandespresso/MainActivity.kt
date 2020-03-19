@@ -3,6 +3,7 @@ package info.sanaebadi.androidtestingwithjunitandespresso
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.View
 import info.sanaebadi.androidtestingwithjunitandespresso.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -20,4 +21,8 @@ class MainActivity : AppCompatActivity() {
 
 
 }
+
+    fun handelRegister(view: View) {
+
+    }
 }
