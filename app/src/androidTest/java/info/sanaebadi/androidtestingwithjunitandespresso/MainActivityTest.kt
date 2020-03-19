@@ -1,6 +1,10 @@
 package info.sanaebadi.androidtestingwithjunitandespresso
 
 import androidx.test.espresso.Espresso.onView
+import androidx.test.espresso.action.ViewActions.clearText
+import androidx.test.espresso.action.ViewActions.click
+import androidx.test.espresso.assertion.ViewAssertions.matches
+import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.rule.ActivityTestRule
@@ -26,7 +30,15 @@ class MainActivityTest {
     @Test
     fun handelRegister() {
 
-        onView()
+        //this line fetch the edtName
+        onView(withId(R.id.edt_name)).perform(clearText())
+
+        //clicked the register button
+        onView(withId(R.id.btn_register)).perform(click())
+
+        onView(withId(R.id.txt_error))
+            .check(matches(isDisplayed()))
+            .check(matches(withText(R.string.error_fill_fields)))
     }
 
     @Test
