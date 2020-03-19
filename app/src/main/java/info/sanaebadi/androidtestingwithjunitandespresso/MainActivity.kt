@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
+import android.widget.Toast
 import info.sanaebadi.androidtestingwithjunitandespresso.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -28,6 +29,7 @@ class MainActivity : AppCompatActivity() {
             binding.txtError.text = getString(R.string.fill_all_fields)
         } else {
             binding.txtError.visibility = View.GONE
+            Toast.makeText(this, "You Registered Now !", Toast.LENGTH_SHORT).show()
         }
     }
 }
