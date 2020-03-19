@@ -2,7 +2,9 @@ package info.sanaebadi.androidtestingwithjunitandespresso
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
+import androidx.test.rule.ActivityTestRule
 import junit.framework.Assert.assertEquals
+import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 
@@ -11,6 +13,10 @@ import org.junit.runner.RunWith
 class MainActivityTest {
 
     //we need the rule to launch the activity before running the test
+
+    @Rule
+    @JvmField
+    var myRule = ActivityTestRule<MainActivity>(MainActivity::class.java)
 
     @Test
     fun useAppContext() {
