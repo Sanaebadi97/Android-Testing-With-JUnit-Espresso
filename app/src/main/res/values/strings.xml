@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">AndroidTestingwithJUnitandEspresso</string>
+    <string name="register">Register</string>
+    <string name="enter_your_name">ENTER YOUR NAME</string>
+    <string name="enter_your_user_name">ENTER YOUR USER NAME</string>
+    <string name="enter_your_password">ENTER YOUR PASSWORD</string>
 </resources>
