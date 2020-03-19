@@ -8,6 +8,7 @@
 
 # JUnit5(Android Logic Test) cheats sheet 
 
-![0_Lw_JBd5rPvpCbrxf](https://user-images.githubusercontent.com/26750131/77078602-2fd63100-69cd-11ea-82d9-da59fbfa9430.png)
+![70203c36bc9b56259546962f61f1cf87](https://user-images.githubusercontent.com/26750131/77078783-7035af00-69cd-11ea-8c0e-5a946aa7c1a7.jpg)
+
 
 
