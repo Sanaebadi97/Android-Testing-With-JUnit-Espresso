@@ -20,9 +20,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-}
+    }
 
     fun handelRegister(view: View) {
-
+        if (binding.edtName.text!!.isEmpty() or binding.edtUserName.text!!.isEmpty() or binding.edtPassword.text!!.isEmpty()) {
+            binding.txtError.visibility = View.VISIBLE
+            binding.txtError.text = getString(R.string.fill_all_fields)
+        } else {
+            binding.txtError.visibility = View.GONE
+        }
     }
 }
