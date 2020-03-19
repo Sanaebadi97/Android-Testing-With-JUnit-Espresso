@@ -23,6 +23,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/androidTest/java/info/sanaebadi/androidtestingwithjunitandespresso/MainActivityTest.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/info/sanaebadi/androidtestingwithjunitandespresso/MainActivity.kt">
           <value>
             <set />
