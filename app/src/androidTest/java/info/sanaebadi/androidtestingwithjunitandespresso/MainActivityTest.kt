@@ -1,5 +1,6 @@
 package info.sanaebadi.androidtestingwithjunitandespresso
 
+import android.view.Display
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions.clearText
 import androidx.test.espresso.action.ViewActions.click
@@ -9,6 +10,7 @@ import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.rule.ActivityTestRule
 import junit.framework.Assert.assertEquals
+import org.hamcrest.core.IsNot.not
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -30,11 +32,16 @@ class MainActivityTest {
     @Test
     fun handelRegister() {
 
+        onView(withId(R.id.txt_error))
+            .check(matches(not(isDisplayed())))
+
         //this line fetch the edtName
-        onView(withId(R.id.edt_name)).perform(clearText())
+        onView(withId(R.id.edt_name))
+            .perform(clearText())
 
         //clicked the register button
-        onView(withId(R.id.btn_register)).perform(click())
+        onView(withId(R.id.btn_register))
+            .perform(click())
 
         onView(withId(R.id.txt_error))
             .check(matches(isDisplayed()))
