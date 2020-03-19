@@ -16,6 +16,9 @@ class MainActivityTest {
 
     @Rule
     @JvmField
+
+    //this line means : espresso please launch the main activity before run test
+
     var myRule = ActivityTestRule<MainActivity>(MainActivity::class.java)
 
     @Test
