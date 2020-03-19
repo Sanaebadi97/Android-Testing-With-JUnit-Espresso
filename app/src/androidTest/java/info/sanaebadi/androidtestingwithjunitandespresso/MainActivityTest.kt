@@ -45,7 +45,7 @@ class MainActivityTest {
 
         onView(withId(R.id.txt_error))
             .check(matches(isDisplayed()))
-            .check(matches(withText(R.string.error_fill_fields)))
+            .check(matches(withText("Please Fill all Fields")))
     }
 
     @Test
