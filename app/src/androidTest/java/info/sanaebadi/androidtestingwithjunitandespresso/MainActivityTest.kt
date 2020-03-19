@@ -1,5 +1,6 @@
 package info.sanaebadi.androidtestingwithjunitandespresso
 
+import androidx.test.espresso.Espresso.onView
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.rule.ActivityTestRule
@@ -21,10 +22,19 @@ class MainActivityTest {
 
     var myRule = ActivityTestRule<MainActivity>(MainActivity::class.java)
 
+
+    @Test
+    fun handelRegister() {
+
+        onView()
+    }
+
     @Test
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
         assertEquals("info.sanaebadi.androidtestingwithjunitandespresso", appContext.packageName)
     }
+
+
 }
